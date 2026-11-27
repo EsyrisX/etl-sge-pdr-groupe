@@ -37,7 +37,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>${PROJECT_HOME}/pipelines/02c_extraction_enrichie.hpl</filename>
+      <filename>${PROJECT_HOME}/pipelines/ventes/02c_extraction_enrichie.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -64,7 +64,7 @@
       <attributes_hac/>
     </action>
     <action>
-      <filename>${PROJECT_HOME}/pipelines/04a2_chargement_rejouable.hpl</filename>
+      <filename>${PROJECT_HOME}/pipelines/ventes/04a2_chargement_rejouable.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -361,6 +361,29 @@
       <enabled>Y</enabled>
     </hop>
   </hops>
-  <notepads/>
+  <notepads>
+    <notepad>
+      <note>« 04d n'est pas dans la chaîne : il n'est pas rejouable, une relance enverrait tout le complément au journal des rejets. »</note>
+      <markdown>Y</markdown>
+      <notetype>GENERAL</notetype>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+      <xloc>752</xloc>
+      <yloc>32</yloc>
+      <width>304</width>
+      <height>32</height>
+    </notepad>
+  </notepads>
   <attributes/>
 </workflow>
