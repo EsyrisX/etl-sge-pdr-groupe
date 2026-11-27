@@ -2,7 +2,7 @@
 <workflow>
   <name>05d_chaine_mensuelle</name>
   <name_sync_with_filename>Y</name_sync_with_filename>
-  <description/>
+  <description>05d_chaine_mensuelle</description>
   <extended_description/>
   <created_user>-</created_user>
   <modified_user>-</modified_user>

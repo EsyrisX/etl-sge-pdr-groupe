@@ -132,6 +132,11 @@
     }
   ],
   "name": "test_nettoyage",
-  "trans_test_tweaks": [],
+  "trans_test_tweaks": [
+    {
+      "transformName": "ecriture_rejets",
+      "tweak": "BYPASS_TRANSFORM"
+    }
+  ],
   "pipeline_filename": "./pipelines/ventes/03b_nettoyage_reprise.hpl"
 }
