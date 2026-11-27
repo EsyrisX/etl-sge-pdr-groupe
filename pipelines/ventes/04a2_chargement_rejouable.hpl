@@ -336,11 +336,11 @@
       <schema>public</schema>
       <table>entrepot_vente</table>
     </lookup>
-    <commit>100</commit>
+    <commit>1000</commit>
     <update_bypassed>N</update_bypassed>
     <connection>sge_postgres</connection>
     <distribute>Y</distribute>
-    <copies>1</copies>
+    <copies>4</copies>
     <GUI>
       <xloc>368</xloc>
       <yloc>192</yloc>
