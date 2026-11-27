@@ -1,0 +1,12 @@
+id_ticket;date_vente;heure_vente;code_magasin;code_produit;libelle_produit;rayon;quantite;prix_unitaire;mode_paiement
+T990001;05/12/2025;09:12:40;MAG-STR-01;PRD-0011;Baguette tradition;Boulangerie;2;1,20;CB
+T990002;2025-12-06;10:31:05;MAG-STR-01;prd-0031;Pommes Gala 1kg;  Fruits et légumes;1;2,60;carte bancaire
+T990003;07/12/2025;11:02:17;MAG-STR-01;PRD0021;Lait demi-écrémé 1L;CRÈMERIE;-1;1,05;ESPÈCES
+T990004;08/12/2025;12:15:00;MAG-STR-01;PRD-0051;Riz basmati 1kg;Épicerie;1;3,10;TR
+T990004;08/12/2025;12:15:00;MAG-STR-01;PRD-0051;Riz basmati 1kg;Épicerie;1;3,10;TR
+T990005;09/12/2025;14:20:33;MAG-STR-01;PRD-0062;Jus d'orange 1L;Boissons;;1,85;CB
+T990006;10/12/2025;15:45:10;MAG-STR-01;PRD-0041;Poulet fermier;Boucherie;1;;ESPECES
+T990007;11/12/2025;16:05:52;MAG-STR-01;PRD-0072;Papier toilette x12;Entretien;1;9999,99;CB
+T990008;12/12/2025;17:30:08;MAG-STR-01;PRD-0022;Beurre doux 250g;Crèmerie;2;0,00;CB
+;13/12/2025;18:12:44;MAG-STR-01;PRD-0032;Bananes 1kg;Fruits et légumes;1;1,95;CB
+T990010;14/12/2025;09:55:21;MAG-STR-01;PRD-0053;Huile d'olive 75cl;épicerie;1;7,40;esp

@@ -1,0 +1,6 @@
+id_ticket,date_vente,heure_vente,code_magasin,code_produit,libelle_produit,rayon,quantite,prix_unitaire,mode_paiement,nb_occurrences
+T990002,06/12/2025,10:31:05,MAG-STR-01,PRD-0031,Pommes Gala 1kg,Fruits et légumes,1,2.60,CB,1
+T990001,05/12/2025,09:12:40,MAG-STR-01,PRD-0011,Baguette tradition,Boulangerie,2,1.20,CB,1
+T990003,07/12/2025,11:02:17,MAG-STR-01,PRD-0021,Lait demi-écrémé 1L,Crèmerie,-1,1.05,ESPECES,1
+T990004,08/12/2025,12:15:00,MAG-STR-01,PRD-0051,Riz basmati 1kg,Épicerie,1,3.10,TICKET_RESTO,2
+T990010,14/12/2025,09:55:21,MAG-STR-01,PRD-0053,Huile d'olive 75cl,Épicerie,1,7.40,ESPECES,1

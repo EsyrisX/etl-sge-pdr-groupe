@@ -1,0 +1,137 @@
+{
+  "database_replacements": [],
+  "autoOpening": true,
+  "description": "Vérifie les règles de nettoyage de la reprise (normalisation, doublons, rejets) sur onze lignes choisies",
+  "persist_filename": "",
+  "test_type": "UNIT_TEST",
+  "variableValues": [],
+  "basePath": "${HOP_UNIT_TESTS_FOLDER}",
+  "golden_data_sets": [
+    {
+      "field_mappings": [
+        {
+          "transform_field": "id_ticket",
+          "data_set_field": "id_ticket"
+        },
+        {
+          "transform_field": "date_vente",
+          "data_set_field": "date_vente"
+        },
+        {
+          "transform_field": "heure_vente",
+          "data_set_field": "heure_vente"
+        },
+        {
+          "transform_field": "code_magasin",
+          "data_set_field": "code_magasin"
+        },
+        {
+          "transform_field": "code_produit",
+          "data_set_field": "code_produit"
+        },
+        {
+          "transform_field": "libelle_produit",
+          "data_set_field": "libelle_produit"
+        },
+        {
+          "transform_field": "rayon",
+          "data_set_field": "rayon"
+        },
+        {
+          "transform_field": "quantite",
+          "data_set_field": "quantite"
+        },
+        {
+          "transform_field": "prix_unitaire",
+          "data_set_field": "prix_unitaire"
+        },
+        {
+          "transform_field": "mode_paiement",
+          "data_set_field": "mode_paiement"
+        },
+        {
+          "transform_field": "nb_occurrences",
+          "data_set_field": "nb_occurrences"
+        }
+      ],
+      "field_order": [
+        "id_ticket",
+        "date_vente",
+        "heure_vente",
+        "code_magasin",
+        "code_produit",
+        "libelle_produit",
+        "rayon",
+        "quantite",
+        "prix_unitaire",
+        "mode_paiement",
+        "nb_occurrences"
+      ],
+      "data_set_name": "ds_ventes_nettoyees_attendues",
+      "transform_name": "ecriture_ventes_nettoyees"
+    }
+  ],
+  "input_data_sets": [
+    {
+      "field_mappings": [
+        {
+          "transform_field": "id_ticket",
+          "data_set_field": "id_ticket"
+        },
+        {
+          "transform_field": "date_vente",
+          "data_set_field": "date_vente"
+        },
+        {
+          "transform_field": "heure_vente",
+          "data_set_field": "heure_vente"
+        },
+        {
+          "transform_field": "code_magasin",
+          "data_set_field": "code_magasin"
+        },
+        {
+          "transform_field": "code_produit",
+          "data_set_field": "code_produit"
+        },
+        {
+          "transform_field": "libelle_produit",
+          "data_set_field": "libelle_produit"
+        },
+        {
+          "transform_field": "rayon",
+          "data_set_field": "rayon"
+        },
+        {
+          "transform_field": "quantite",
+          "data_set_field": "quantite"
+        },
+        {
+          "transform_field": "prix_unitaire",
+          "data_set_field": "prix_unitaire"
+        },
+        {
+          "transform_field": "mode_paiement",
+          "data_set_field": "mode_paiement"
+        }
+      ],
+      "field_order": [
+        "id_ticket",
+        "date_vente",
+        "heure_vente",
+        "code_magasin",
+        "code_produit",
+        "libelle_produit",
+        "rayon",
+        "quantite",
+        "prix_unitaire",
+        "mode_paiement"
+      ],
+      "data_set_name": "ds_ventes_test",
+      "transform_name": "lecture_reprise_brute"
+    }
+  ],
+  "name": "test_nettoyage",
+  "trans_test_tweaks": [],
+  "pipeline_filename": "./pipelines/ventes/03b_nettoyage_reprise.hpl"
+}
