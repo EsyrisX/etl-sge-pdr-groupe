@@ -184,7 +184,7 @@
     <formulas>
       <formula>
         <field_name>code_produit</field_name>
-        <formula>"PDR-" &amp; [ARTICLE]</formula>
+        <formula>"PRD-" &amp; [ARTICLE]</formula>
         <value_type>2</value_type>
         <value_length>-1</value_length>
         <value_precision>-1</value_precision>
