@@ -108,3 +108,42 @@ Le détail de chaque décision est sur les notes des canevas.
 - Test unitaire de `03b_nettoyage_reprise`, sur
   `ventes_test_nettoyage.csv` : 5 lignes nettoyées et 5 lignes
   rejetées. À relancer après toute modification du nettoyage.
+
+## Intégration Primeurs du Rhin (ajout PDR)
+
+Intègre les ventes des 3 magasins PDR (Colmar, Sélestat, Obernai) dans
+`entrepot_vente`, sans toucher aux ventes existantes. Lancement :
+
+    .\hop-run.bat -e sge-reference-dev -r local -f '${PROJECT_HOME}/workflows/06_integration_pdr.hwf' -p MOIS=2026-01 -l BASIC
+
+Le workflow vérifie les 3 fichiers et la base, puis lance
+`06a_referentiel_pdr` (ajout des produits PDR au référentiel) et
+`06b_ventes_pdr` (lecture, dédoublonnage, chargement).
+
+Hypothèses :
+
+- doublons exacts de Colmar (210 lignes) écartés dans `data/rejets/` ;
+- magasins renommés `MAG-COL-01`, `MAG-SEL-01`, `MAG-OBE-01` ;
+- 11 articles sans correspondance : code provisoire `PRD-A-XXXX`,
+  TVA 5,5 %, à valider par les achats.
+
+Chiffres attendus : 11 984 ventes PDR chargées (56 856,35 €), 49 967
+lignes au total dans `entrepot_vente` (274 420,90 €), 30 produits.
+
+## Vérification des chiffres attendus
+
+Ventes et CA par magasin :
+
+    docker exec -it sge-postgres psql -U hop -d supermarches -c "SELECT code_magasin, count(*), sum(montant_ttc) FROM entrepot_vente GROUP BY 1 ORDER BY 1;"
+
+Total PDR (attendu : 11 984 lignes, 56 856,35 €) :
+
+    docker exec -it sge-postgres psql -U hop -d supermarches -c "SELECT count(*), sum(montant_ttc) FROM entrepot_vente WHERE code_magasin IN ('MAG-COL-01','MAG-SEL-01','MAG-OBE-01');"
+
+Total entrepôt (attendu : 49 967 lignes, 274 420,90 €) :
+
+    docker exec -it sge-postgres psql -U hop -d supermarches -c "SELECT count(*), sum(montant_ttc) FROM entrepot_vente;"
+
+Référentiel (attendu : 30 produits) :
+
+    docker exec -it sge-postgres psql -U hop -d supermarches -c "SELECT count(*) FROM referentiel_produit;"
