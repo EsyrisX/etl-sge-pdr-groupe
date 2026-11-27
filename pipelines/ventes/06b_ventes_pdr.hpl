@@ -199,7 +199,7 @@
         <ignore>N</ignore>
         <format>#.##</format>
         <trim_type>none</trim_type>
-        <precision>1</precision>
+        <precision>2</precision>
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
