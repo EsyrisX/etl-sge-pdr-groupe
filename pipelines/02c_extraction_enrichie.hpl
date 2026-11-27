@@ -1044,7 +1044,7 @@ FROM referentiel_produit </sql>
     <schema_definition/>
     <ignore_fields>N</ignore_fields>
     <file>
-      <name>${OUTPUTS_DIR}/ventes_consolidees_${MOIS}</name>
+      <name>${STAGING_DIR}/ventes_consolidees_${MOIS}</name>
       <do_not_open_new_file_init>Y</do_not_open_new_file_init>
       <extension>csv</extension>
       <append>N</append>

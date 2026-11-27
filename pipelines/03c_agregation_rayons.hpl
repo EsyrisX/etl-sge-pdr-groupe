@@ -80,7 +80,7 @@
   <transform>
     <type>CSVInput</type>
     <name>lecture_ventes_nettoyees</name>
-    <filename>${OUTPUTS_DIR}/ventes_nettoyees_2025-12.csv</filename>
+    <filename>${STAGING_DIR}/ventes_nettoyees_2025-12.csv</filename>
     <include_filename>N</include_filename>
     <rownum_field/>
     <header>Y</header>

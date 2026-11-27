@@ -26,7 +26,7 @@
   <transform>
     <type>CSVInput</type>
     <name>lecture_ventes_consolidees</name>
-    <filename>${OUTPUTS_DIR}/ventes_consolidees_${MOIS}.csv</filename>
+    <filename>${STAGING_DIR}/ventes_consolidees_${MOIS}.csv</filename>
     <include_filename>N</include_filename>
     <rownum_field/>
     <header>Y</header>

@@ -11,12 +11,20 @@
       "description" : "dossier des données"
     }, {
       "name" : "INPUTS_DIR",
-      "value" : "${DATA_DIR}/inputs",
-      "description" : "dossier des données d'entrée"
+      "value" : "${DATA_DIR}/landing",
+      "description" : "zone landing : fichiers reçus, jamais modifiés"
     }, {
       "name" : "OUTPUTS_DIR",
-      "value" : "${DATA_DIR}/outputs",
-      "description" : "dossier des données de sortie"
+      "value" : "${DATA_DIR}/entrepot",
+      "description" : "zone entrepot : fichiers livrés"
+    }, {
+      "name" : "STAGING_DIR",
+      "value" : "${DATA_DIR}/staging",
+      "description" : "zone staging : fichiers intermédiaires, jetables"
+    }, {
+      "name" : "REJETS_DIR",
+      "value" : "${DATA_DIR}/rejets",
+      "description" : "zone rejets : lignes écartées, avec leur motif"
     } ]
   }
 }
