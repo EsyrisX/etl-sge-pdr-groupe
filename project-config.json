@@ -1,0 +1,22 @@
+{
+  "metadataBaseFolder" : "${PROJECT_HOME}/metadata",
+  "unitTestsBasePath" : "${PROJECT_HOME}",
+  "dataSetsCsvFolder" : "${PROJECT_HOME}/datasets",
+  "enforcingExecutionInHome" : true,
+  "autoExportMetadataFilename" : "metadata.json",
+  "config" : {
+    "variables" : [ {
+      "name" : "DATA_DIR",
+      "value" : "${PROJECT_HOME}/data",
+      "description" : "dossier des données"
+    }, {
+      "name" : "INPUTS_DIR",
+      "value" : "${DATA_DIR}/inputs",
+      "description" : "dossier des données d'entrée"
+    }, {
+      "name" : "OUTPUTS_DIR",
+      "value" : "${DATA_DIR}/outputs",
+      "description" : "dossier des données de sortie"
+    } ]
+  }
+}

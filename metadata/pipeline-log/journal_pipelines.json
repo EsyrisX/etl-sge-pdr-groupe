@@ -1,0 +1,21 @@
+{
+  "virtualPath": "",
+  "logLevel": "ERROR",
+  "pipelinesToLog": [
+    {
+      "pipelineToLogFilename": "${PROJECT_HOME}/pipelines/02c_extraction_enrichie.hpl"
+    },
+    {
+      "pipelineToLogFilename": "${PROJECT_HOME}/pipelines/04a2_chargement_rejouable.hpl"
+    }
+  ],
+  "failParentOnLoggingFailure": false,
+  "loggingParentsOnly": false,
+  "name": "journal_pipelines",
+  "intervalInSeconds": "30",
+  "executingPeriodically": false,
+  "pipelineFilename": "${PROJECT_HOME}/pipelines/05z_journal_execution.hpl",
+  "executingAtEnd": true,
+  "enabled": true,
+  "executingAtStart": false
+}

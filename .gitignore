@@ -1,0 +1,16 @@
+# Données : elles ne sont pas du code
+# - landing : livraisons des magasins, volumineuses, renouvelées chaque mois
+# - staging : intermédiaires, régénérés à chaque exécution
+# - rejets et entrepot : produits par la chaîne
+data/
+
+# Journaux d'exécution
+logs/
+
+# Fichiers temporaires
+*.bak
+*.tmp
+
+# Fichier d'environnement : il contient le mot de passe.
+# Normalement rangé hors du projet ; cette ligne protège d'une erreur de rangement.
+env-*.json
