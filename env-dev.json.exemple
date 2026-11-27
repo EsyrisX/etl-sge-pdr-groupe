@@ -1,0 +1,23 @@
+{
+  "variables" : [ {
+    "name" : "SGE_POSTGRES_HOSTNAME",
+    "value" : "nom_du_serveur",
+    "description" : "Serveur PostgreSQL. En local, avec le conteneur de infra/ : localhost"
+  }, {
+    "name" : "SGE_POSTGRES_PORT",
+    "value" : "numero_de_port",
+    "description" : "Port publié par le conteneur sge-postgres, voir infra/docker-compose.yml"
+  }, {
+    "name" : "SGE_POSTGRES_DATABASE",
+    "value" : "nom_de_la_base",
+    "description" : "Base de l'entrepôt, voir infra/docker-compose.yml"
+  }, {
+    "name" : "SGE_POSTGRES_USERNAME",
+    "value" : "utilisateur",
+    "description" : "Utilisateur PostgreSQL"
+  }, {
+    "name" : "SGE_POSTGRES_PASSWORD",
+    "value" : "mot_de_passe",
+    "description" : "Mot de passe de l'utilisateur. Ne jamais le versionner"
+  } ]
+}
